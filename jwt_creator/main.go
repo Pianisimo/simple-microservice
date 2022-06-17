@@ -47,5 +47,5 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Failed to generate the token")
 	}
 
-	fmt.Fprintf(w, string(validToken))
+	fmt.Fprintf(w, validToken)
 }
